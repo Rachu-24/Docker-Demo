@@ -1,0 +1,59 @@
+root@ip-10-0-3-62:/home/ubuntu# history
+    1  docker pull nginx:latest
+    2  docket images
+    3  docker images
+    4  docker pull python:latest
+    5  docker images
+    6  docker pull python;3.15.0a8-trixie
+    7  docker pull python:3.15.0a8-trixie
+    8  docker images
+    9  docker run -p 80:80 nginx:latest
+   10  docker run -d -p 80:80 nginx:latest
+   11  docker ps
+   12  docker stop 5704d3f1fb0a
+   13  docker ps -a
+   14  docker ps
+   15  docker images
+   16  docker rmi python:3.15.0a8-trixie
+   17  docker images
+   18  docker rmi python:latest
+   19  docker images
+   20  docker ps
+   21  docker rmi nginx:latest
+   22  docker ps
+   23  docker images
+   24  vi Dockerfile
+   25  cat Dockerfile
+   26  docker build -t Nginx-demo
+   27  docker build -t Nginx-demo .
+   28  history
+   29  systemctl docker status
+   30  exit
+   31  docker --history
+   32  docker --help
+   33  docker build -t dockerfile .
+   34  docker images
+   35  docker ps
+   36  docker run dockerfile:latest
+   37* docker run -d dockerfile:latest .dockerfile:latest
+   38  docker run -d dockerfile:latest
+   39  docker ps
+   40  docker images
+   41  docker build -t test-Nginx:dockerfile .
+   42  docker build --help
+   43  docker build -t dockerfile:Test-Nginx .
+   44  docker images
+   45  docker run -d docker build --help
+   46  docker images
+   47  docker rmi docker:latest
+   48  docker rmi docker:latest -force
+   49  docker rmi docker:latest -force c77e5d7912f9
+   50  docker rmi --help
+   51  docker rmi -f docker:latest
+   52  docker images
+   53  docker run -d dockerfile:Test-Nginx
+   54  docker images
+   55  docker ps
+   56  histroy
+   57  history
+root@ip-10-0-3-62:/home/ubuntu#
