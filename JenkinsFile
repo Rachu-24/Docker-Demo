@@ -12,7 +12,14 @@ pipeline{
         stage("building docker img"){
             steps{
                 echo "Building Docker img"
+                }
+            }
+        
+        stage("pushing docker img"){
+            steps{
+                echo"pushing docker img to docker hub"
+            }
         }
-        }
+
         }  
 }
