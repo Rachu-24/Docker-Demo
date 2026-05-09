@@ -1,0 +1,18 @@
+pipeline{
+    agent any 
+    stages{
+        stage("git clone"){
+            steps{
+                echo "Cloning repo"
+                
+                #sh " git clone  https://github.com/Rachu-24/Docker-Demo.git"
+                }
+            }
+
+        stage("building docker img"){
+            steps{
+                echo "Building Docker img"
+        }
+        }
+        }  
+}
