@@ -18,7 +18,9 @@ pipeline{
         stage("Running docker img"){
             steps{
                 echo"Running build docker img"
-                sh "docker run -d python:latest"
+                /*sh "docker run -d python:latest"*/
+
+                sh"docker imgages"
             }
         }
         stage("pushing docker img"){
