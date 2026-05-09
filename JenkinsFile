@@ -15,7 +15,12 @@ pipeline{
                 sh "docker build -t python:latest ."
                 }
             }
-        
+        stage("Running docker img"){
+            steps{
+                echo"Running build docker img"
+                sh "docker run -d python:latest"
+            }
+        }
         stage("pushing docker img"){
             steps{
                 echo"pushing docker img to docker hub"
