@@ -12,6 +12,7 @@ pipeline{
         stage("building docker img"){
             steps{
                 echo "Building Docker img"
+                sh "docker build -t python:latest ."
                 }
             }
         
