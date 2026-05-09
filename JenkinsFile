@@ -1,18 +1,23 @@
 pipeline{
     agent any 
+
+    environment{
+        IMAGE_NAME = "Rachu-24/python"
+        TAG_NAME = "latest"
+
+    }
+
     stages{
         stage("git clone"){
             steps{
                 echo "Cloning repo"
-                
-                
                 }
             }
 
         stage("building docker img"){
             steps{
                 echo "Building Docker img"
-                sh "docker build -t python:latest ."
+                sh "docker build -t $IMAGE_NAME:$TAG_NAME ."
                 }
             }
         stage("Running docker img"){
@@ -23,9 +28,12 @@ pipeline{
                 sh"docker images"
             }
         }
-        stage("pushing docker img"){
+        stage("removing docker img"){
             steps{
-                echo"pushing docker img to docker hub"
+                echo"removed docker img"
+                sh "docker rmi $IMAGE_NAME:$TAG_NAME"
+
+                sh"docker images"
             }
         }
 
