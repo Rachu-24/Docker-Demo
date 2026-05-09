@@ -5,7 +5,7 @@ pipeline{
             steps{
                 echo "Cloning repo"
                 
-                #sh " git clone  https://github.com/Rachu-24/Docker-Demo.git"
+                
                 }
             }
 
